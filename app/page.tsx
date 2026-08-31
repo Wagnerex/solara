@@ -41,14 +41,19 @@ export default function HomePage() {
 
         setUserEmail(user.email);
 
-        const { data: perfilData } = await supabase
+        const { data: perfilData, error: perfilError } = await supabase
           .from("perfis")
           .select("papel,areas")
           .eq("id", user.id)
           .single();
 
+        console.log("Perfil loaded:", perfilData, "Error:", perfilError);
+
         if (perfilData) {
+          console.log("Setting perfil with papel:", perfilData.papel);
           setPerfil(perfilData);
+        } else {
+          console.log("No perfil data found for user:", user.id);
         }
       } catch (error) {
         console.error("Auth error:", error);
@@ -87,7 +92,7 @@ export default function HomePage() {
         <h1>Solara OS</h1>
         <div className={styles.userSection}>
           <span>{userEmail}</span>
-          {perfil?.papel === "admin" && (
+          {perfil?.papel?.toLowerCase() === "admin" && (
             <button className={styles.adminBtn} onClick={() => router.push("/admin")}>
               Admin
             </button>
