@@ -127,13 +127,27 @@ export default function AdminPage() {
   if (loading) {
     return (
       <div className={styles.container}>
-        <p>Verificando acesso...</p>
+        <div className={styles.topbar}>
+          <h1>Carregando...</h1>
+        </div>
       </div>
     );
   }
 
   if (!isAdmin) {
-    return null;
+    return (
+      <div className={styles.container}>
+        <div className={styles.topbar}>
+          <h1>Acesso Negado</h1>
+          <button onClick={() => router.push("/")} className={styles.backBtn}>
+            Voltar
+          </button>
+        </div>
+        <main className={styles.main}>
+          <p>Você não tem permissão para acessar esta página.</p>
+        </main>
+      </div>
+    );
   }
 
   const AREAS = ["vendas", "financeiro", "rh", "juridico", "operacoes"];
