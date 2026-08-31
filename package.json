@@ -1,0 +1,33 @@
+{
+  "name": "solara-os",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000s\u0000o\u0000l\u0000a\u0000r\u0000a\u0000\r\u0000 \u0000#\u0000 \u0000s\u0000o\u0000l\u0000a\u0000r\u0000a\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wagnerex/solara.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wagnerex/solara/issues"
+  },
+  "homepage": "https://github.com/Wagnerex/solara#readme",
+  "dependencies": {
+    "@supabase/ssr": "^0.12.5",
+    "@supabase/supabase-js": "^2.112.4",
+    "@types/node": "^26.4.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.5",
+    "next": "^16.3.3",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "typescript": "^7.0.2"
+  }
+}
