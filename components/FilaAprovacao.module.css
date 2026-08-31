@@ -1,0 +1,151 @@
+.container {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.container h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.empty {
+  color: #9ca3af;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.item {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f9fafb;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.header:hover {
+  background-color: #f3f4f6;
+}
+
+.titulo {
+  font-weight: 500;
+  color: #1f2937;
+  flex: 1;
+}
+
+.arrow {
+  color: #6b7280;
+  margin-left: 1rem;
+}
+
+.details {
+  padding: 1rem;
+  border-top: 1px solid #e5e7eb;
+  background-color: white;
+}
+
+.proposta {
+  margin-bottom: 1.5rem;
+}
+
+.proposta strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.proposta pre {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  padding: 1rem;
+  overflow-x: auto;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #1f2937;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.approveBtn {
+  background-color: #10b981;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  flex: 1;
+  min-width: 150px;
+}
+
+.approveBtn:hover:not(:disabled) {
+  background-color: #059669;
+}
+
+.approveBtn:disabled {
+  opacity: 0.6;
+}
+
+.rejectSection {
+  display: flex;
+  gap: 0.75rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+.textarea {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 50px;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.rejectBtn {
+  background-color: #ef4444;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  align-self: flex-start;
+}
+
+.rejectBtn:hover:not(:disabled) {
+  background-color: #dc2626;
+}
+
+.rejectBtn:disabled {
+  opacity: 0.6;
+}

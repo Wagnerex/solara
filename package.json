@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Wagnerex/solara#readme",
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.122.0",
     "@supabase/ssr": "^0.12.5",
     "@supabase/supabase-js": "^2.112.4",
     "@types/node": "^26.4.0",
